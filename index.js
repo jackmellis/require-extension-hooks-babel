@@ -13,8 +13,8 @@ const defaultConfig = {
 };
 
 module.exports = function({content, filename}){
-  for (let x = 0, l = config.exclude.length; x < l; x++){
-    if (filename.match(config.exclude[x])){
+  for (let x = 0, l = globalConfig.exclude.length; x < l; x++){
+    if (filename.match(globalConfig.exclude[x])){
       return;
     }
   }
@@ -25,5 +25,5 @@ module.exports = function({content, filename}){
   return { content : result.code, sourceMap : result.map };
 };
 module.exports.configure = function (options) {
-  globalConfig = Object.assign({}, defaultConfig options);
-}
+  globalConfig = Object.assign({}, defaultConfig, options);
+};
