@@ -20,6 +20,8 @@ module.exports = function({content, filename}){
   }
 
   let config = Object.assign({ filename, sourceFileName : filename }, globalConfig);
+  delete config.exclude;
+
   let result = babel.transform(content, config);
 
   return { content : result.code, sourceMap : result.map };
