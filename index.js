@@ -1,5 +1,4 @@
 const babel = require('babel-core');
-let globalConfig = {};
 const defaultConfig = {
   exclude : [/node_modules|coverage/],
   presets : [
@@ -11,6 +10,7 @@ const defaultConfig = {
   ],
   sourceMaps : true
 };
+let globalConfig = Object.assign({}, defaultConfig);
 
 module.exports = function({content, filename}){
   for (let x = 0, l = globalConfig.exclude.length; x < l; x++){
