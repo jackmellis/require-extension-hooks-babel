@@ -1,0 +1,26 @@
+{
+  "name": "require-extension-hooks-babel",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackmellis/require-extension-hooks-babel.git"
+  },
+  "author": "Jack Ellis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jackmellis/require-extension-hooks-babel/issues"
+  },
+  "homepage": "https://github.com/jackmellis/require-extension-hooks-babel#readme",
+  "peerDependencies": {
+    "require-extension-hooks": "0.x"
+  },
+  "dependencies": {
+    "babel-core": "^6.21.0",
+    "babel-preset-env": "^1.1.8"
+  }
+}
