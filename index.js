@@ -4,7 +4,7 @@ const defaultConfig = {
   presets : [
     ['env', {
       targets : {
-        node : ['current']
+        node : 'current'
       }
     }]
   ],
