@@ -1,4 +1,4 @@
-const babel = require('babel-core');
+let babel;
 const defaultConfig = {
   exclude : [/node_modules|coverage/],
   presets : [
@@ -22,6 +22,9 @@ module.exports = function({content, filename}){
   let config = Object.assign({ filename, sourceFileName : filename }, globalConfig);
   delete config.exclude;
 
+  if (!babel){
+    babel = require('babel-core');
+  }
   let result = babel.transform(content, config);
 
   return { content : result.code, sourceMap : result.map };
