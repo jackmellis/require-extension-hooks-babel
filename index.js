@@ -2,7 +2,7 @@ let babel;
 const defaultConfig = {
   exclude : [/node_modules|coverage/],
   presets : [
-    ['env', {
+    ['@babel/env', {
       targets : {
         node : 'current'
       }
@@ -23,7 +23,7 @@ module.exports = function({content, filename}){
   delete config.exclude;
 
   if (!babel){
-    babel = require('babel-core');
+    babel = require('@babel/core');
   }
   let result = babel.transform(content, config);
 
