@@ -1,6 +1,6 @@
 {
   "name": "require-extension-hooks-babel",
-  "version": "0.1.1",
+  "version": "1.0.0-beta.1",
   "description": "",
   "main": "index.js",
   "scripts": {
