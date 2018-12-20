@@ -4,7 +4,11 @@ Simple parser for vue files
 Using require-extension-hooks you can transpile ES6/7/.. code to run in node. Although node supports 99.999% of ES6 features there is one major omission: export/import syntax.
 
 ## Installation  
-`npm install require-extension-hooks require-extension-hooks-babel --save-dev`  
+`npm install require-extension-hooks require-extension-hooks-babel --save-dev`
+
+or for the babel 7 version:
+
+`npm install require-extension-hooks require-extension-hooks-babel@beta --save-dev`
 
 ## Usage  
 ```javascript
