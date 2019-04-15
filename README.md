@@ -1,3 +1,5 @@
+[![NPM Version](https://img.shields.io/npm/v/require-extension-hooks-babel.svg)](https://www.npmjs.com/package/require-extension-hooks-babel) ![GitHub release](https://img.shields.io/github/release/jackmellis/require-extension-hooks-babel.svg) ![npm downloads](https://img.shields.io/npm/dt/require-extension-hooks-vue.svg) 
+
 # require-extension-hooks-babel
 Simple parser for vue files  
 
